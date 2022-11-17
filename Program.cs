@@ -32,7 +32,6 @@ void PrintArray(string[] col)
     {
         Console.Write($"[{col[position]}] ");
     }
-    Console.WriteLine();
 }
 
 void PrintNewArray(string[] collection)
@@ -52,7 +51,6 @@ void PrintNewArray(string[] collection)
 
 string[] array = new string [Size()];
 FillArray(array);
-Console.WriteLine();
 PrintArray(array);
 Console.WriteLine();
 PrintNewArray(array);
