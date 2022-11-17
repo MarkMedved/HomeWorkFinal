@@ -35,8 +35,24 @@ void PrintArray(string[] col)
     Console.WriteLine();
 }
 
+void PrintNewArray(string[] collection)
+{
+    int a =0;
+    string[] newarray = collection;
+    for(int i =0; i<collection.Length; i++)
+    {
+        if(collection[i].Length<=3)
+        {
+            newarray[a]= collection[i];
+            Console.Write($"[{newarray[a]}] ");
+            a++;
+        }
+    }
+}
+
 string[] array = new string [Size()];
 FillArray(array);
 Console.WriteLine();
 PrintArray(array);
 Console.WriteLine();
+PrintNewArray(array);
